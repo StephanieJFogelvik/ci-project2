@@ -84,6 +84,12 @@ footer ul li {
     padding: 1.5rem 2rem;
 }
 
+/* Display moves played */
+.played-move {
+    width: 15%;
+    display: inline-block;
+}
+
 /* Media queries */
 
 @media (max-width: 1200px) {
