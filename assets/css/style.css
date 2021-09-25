@@ -5,6 +5,8 @@ body {
     font-family: Bebas Neue, Roboto;
     color: #F4F2ED;
     text-align: center;
+    padding: 0;
+    margin: 0;
 }
 
 /* Heading */
@@ -19,28 +21,31 @@ body {
  .rock-button {
      color: #E48894;
      display: inline-block;
-     font-size: 4rem;
+     font-size: 2.5rem;
      font-weight: bold;
-     margin: 1rem;
-     padding: 1.5rem;
+     width: 15%;
+     margin: 0.5rem;
+     padding: 0.5rem;
  }
 
  .paper-button {
      color: #F7546D;
      display: inline-block;
-     font-size: 4rem;
+     font-size: 2.5rem;
      font-weight: bold;
-     margin: 1rem;
-     padding: 1.5rem;
+     width: 15%;
+     margin: 0.5rem;
+     padding: 0.5rem;
  }
 
  .scissors-button {
      color: #899690;
      display: inline-block;
-     font-size: 4rem;
+     font-size: 2.5rem;
      font-weight: bold;
-     margin: 1rem;
-     padding: 1.5rem;
+     width: 15%;
+     margin: 0.5rem;
+     padding: 0.5rem;
  }
 
 .score-area {
@@ -49,13 +54,13 @@ body {
     font-size: 1.5rem;
 }
 
-#won {
+#p-won {
     color: #F4F2ED;
     font-weight: bold;
     display: inline-block;
 }
 
-#lost {
+#c-won {
     color: red;
     font-weight: bold;
     display: inline-block;
@@ -77,4 +82,42 @@ footer ul li {
     display: inline-block;
     margin: auto;
     padding: 1.5rem 2rem;
+}
+
+/* Media queries */
+
+@media (max-width: 1200px) {
+    .rock-button {
+        color: #E48894;
+        display: inline-block;
+        font-size: 2.5rem;
+        font-weight: bold;
+        width: 80%;
+    }
+   
+    .paper-button {
+        color: #F7546D;
+        display: inline-block;
+        font-size: 2.5rem;
+        font-weight: bold;
+        width: 80%;
+    }
+   
+    .scissors-button {
+        color: #899690;
+        display: inline-block;
+        font-size: 2.5rem;
+        font-weight: bold;
+        width: 80%;
+    }
+
+    .score-area {
+    width: 100%;
+    }
+
+    .scores {
+        margin: 0.5em auto;
+        display: block;
+        padding: 5px;
+    }
 }
