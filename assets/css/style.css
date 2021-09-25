@@ -1,0 +1,77 @@
+/* Generic page style */
+
+body {
+    background-color: #3B3D3C;
+    font-family: Bebas Neue, Roboto;
+    color: #F4F2ED;
+    text-align: center;
+}
+
+/* Heading */
+
+.heading {
+    text-align: center;
+    font-size: 4rem;
+}
+
+/* Game section */
+
+ .rock-button {
+     color: #E48894;
+     display: inline-block;
+     font-size: 8rem;
+     margin: 1rem;
+     padding: 50px;
+ }
+
+ .paper-button {
+     color: #F7546D;
+     display: inline-block;
+     font-size: 8rem;
+     margin: 1rem;
+     padding: 50px;
+ }
+
+ .scissors-button {
+     color: #899690;
+     display: inline-block;
+     font-size: 8rem;
+     margin: 1rem;
+     padding: 50px;
+ }
+
+.score-area {
+    margin: 5px auto;
+    width: 60%;
+    font-size: 1.5rem;
+}
+
+#won {
+    color: #F4F2ED;
+    font-weight: bold;
+    display: inline-block;
+}
+
+#lost {
+    color: red;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.new-game {
+    color: #F4F2ED;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+footer ul li {
+    color: #F4F2ED;
+    font-weight: bold;
+    font-size: 1.5rem;
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+    margin: auto;
+    padding: 1.5rem 2rem;
+}
