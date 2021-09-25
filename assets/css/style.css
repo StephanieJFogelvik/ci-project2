@@ -19,25 +19,28 @@ body {
  .rock-button {
      color: #E48894;
      display: inline-block;
-     font-size: 8rem;
+     font-size: 4rem;
+     font-weight: bold;
      margin: 1rem;
-     padding: 50px;
+     padding: 1.5rem;
  }
 
  .paper-button {
      color: #F7546D;
      display: inline-block;
-     font-size: 8rem;
+     font-size: 4rem;
+     font-weight: bold;
      margin: 1rem;
-     padding: 50px;
+     padding: 1.5rem;
  }
 
  .scissors-button {
      color: #899690;
      display: inline-block;
-     font-size: 8rem;
+     font-size: 4rem;
+     font-weight: bold;
      margin: 1rem;
-     padding: 50px;
+     padding: 1.5rem;
  }
 
 .score-area {
