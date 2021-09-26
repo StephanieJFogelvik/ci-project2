@@ -6,7 +6,7 @@ const options = document.querySelectorAll(".options");
      option.addEventListener("click", function () {
        const pInput = this.value;
  
-       const cOptions = ["Rock", "Paper", "Scissors"];
+       const cOptions = ["rock", "paper", "scissors"];
        const cInput = cOptions[Math.floor(Math.random() * 3)];
 
        updateMoves(pInput, cInput);
@@ -34,8 +34,8 @@ const options = document.querySelectorAll(".options");
    }
  
    // Player chooses Rock:
-     if (pInput === "Rock") {
-       if (cInput === "Scissors") {
+     if (pInput === "rock") {
+       if (cInput === "scissors") {
          checkRock(`${currentMatch} = You won!`);
          pWon++;
        } else {
@@ -44,8 +44,8 @@ const options = document.querySelectorAll(".options");
        }
      }
      //Player chooses Paper:
-     else if (pInput === "Paper") {
-       if (cInput === "Rock") {
+     else if (pInput === "paper") {
+       if (cInput === "rock") {
          checkPaper(`${currentMatch} = You won!`);
          pWon++;
        } else {
@@ -54,8 +54,8 @@ const options = document.querySelectorAll(".options");
        }
      }
      //Player chooses Scissors:
-     else if (pInput === "Scissors") {
-       if (cInput === "Paper") {
+     else if (pInput === "scissors") {
+       if (cInput === "paper") {
          checkScissors(`${currentMatch} = You won!`);
          pWon++;
        } else {
