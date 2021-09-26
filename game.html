@@ -21,18 +21,23 @@
 
     <!-- Display Moves played -->
     <div class="display-moves">
-          <div>
-            <img class="played-move" src="./assets/images/pexels-peter-döpper-2363901.jpg">
-          </div>
-          <div class="played-move">VS</div>
-          <div>
-            <img class="played-move" src="./assets/images/pexels-peter-döpper-2363901.jpg">
-          </div>
-
+        <div class="move">
+            <img id="pWon" src="./assets/images/hand-rock-regular.svg">
+        </div>
+        <div class="separator">VS</div>
+        <div class="move">
+            <img id="cWon" src="./assets/images/hand-rock-regular.svg">
+        </div>
+    </div>
     <!-- Game Section-->
-        <button class="options rock-button">Rock<br><i class="far fa-hand-rock"></i></button>
-        <button class="options paper-button">Paper<br><i class="far fa-hand-paper"></i></button>
-        <button class="options scissors-button">Scissors<br><i class="far fa-hand-scissors"></i></button>
+    <div class="play">
+        <input class="options rock-button" type="image" src="./assets/images/hand-rock-regular.svg" value="Rock" />
+        <label  for="rock-button">Rock</label>
+        <input class="options paper-button" type="image" src="./assets/images/hand-paper-regular.svg" value="Paper" />
+        <label for="paper-button">Paper</label>
+        <input class="options scissors-button" type="image" src="./assets/images/hand-scissors-regular.svg" value="Scissors" />
+        <label for="scissors-button">Scissors</label>
+    </div>
 
     <!-- Score Area-->
     <div class="score-area">

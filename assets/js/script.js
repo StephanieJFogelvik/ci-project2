@@ -4,11 +4,12 @@ const options = document.querySelectorAll(".options");
  
    options.forEach((option) => {
      option.addEventListener("click", function () {
-       const pInput = this.textContent;
+       const pInput = this.value;
  
        const cOptions = ["Rock", "Paper", "Scissors"];
        const cInput = cOptions[Math.floor(Math.random() * 3)];
- 
+
+       updateMoves(pInput, cInput);
        compareInputs(pInput, cInput);
        updateScore();
        if (checkWinner()) {
@@ -64,7 +65,7 @@ const options = document.querySelectorAll(".options");
      }
    }
 
-   function checkRock(result) {
+  function checkRock(result) {
     let rk = document.getElementById("result");
 
     rk.innerHTML = "<h2>" + result + "</h2>";
@@ -106,3 +107,8 @@ const options = document.querySelectorAll(".options");
      rs.innerHTML = "<h2>" + result + "</h2>";
    }
 
+   
+function updateMoves(pInput, cInput) {
+  document.getElementById("pWon").src=`./assets/images/${pInput}.svg`;
+  document.getElementById("cWon").src=`./assets/images/${cInput}.svg`;
+}

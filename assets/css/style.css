@@ -18,35 +18,61 @@ body {
 
 /* Game section */
 
- .rock-button {
+.play {
+    max-width: 100%;
+    padding: 0.5rem 0.5rem;
+    margin: 1rem auto;
+}
+
+.options {
+    background-color: #E48894;
+    border-radius: 25%;
+    border-width: 4px;
+    border-style: solid;
+    border-color: #F7546D;
+    width: 2rem;
+    height: 2rem;
+    padding: 1rem;
+    animation-name: anim-fade;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    width: 100%;
+    max-width: 120px;
+  }
+
+.display-moves {
+    align-items: center;
+    margin: 0.5rem;
+    justify-content: space-evenly;
+}
+
+.move {
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0.5rem;
+    background-color: #F4F2ED;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #F7546D;
+    display: inline-block;
+}
+
+.separator {
+    font-size: 1rem;
+    display: inline-block;
+    margin: 0.5rem;
+}
+
+
+edited out {
      color: #E48894;
-     display: inline-block;
-     font-size: 2.5rem;
-     font-weight: bold;
-     width: 15%;
-     margin: 0.5rem;
-     padding: 0.5rem;
- }
-
- .paper-button {
+    
      color: #F7546D;
-     display: inline-block;
-     font-size: 2.5rem;
-     font-weight: bold;
-     width: 15%;
-     margin: 0.5rem;
-     padding: 0.5rem;
- }
-
- .scissors-button {
      color: #899690;
-     display: inline-block;
-     font-size: 2.5rem;
-     font-weight: bold;
-     width: 15%;
-     margin: 0.5rem;
-     padding: 0.5rem;
+ 
  }
+ */
 
 .score-area {
     margin: 5px auto;
