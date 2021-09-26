@@ -22,7 +22,7 @@ const options = document.querySelectorAll(".options");
    function compareInputs(pInput, cInput) {
      const currentMatch = `${pInput} vs ${cInput}`;
      if (pInput === cInput) {
-       checkTie(`${currentMatch} is a Tie!`);
+       checkTie(`${currentMatch} is a tie!`);
        return;
      }
  
@@ -35,34 +35,52 @@ const options = document.querySelectorAll(".options");
    // Player chooses Rock:
      if (pInput === "Rock") {
        if (cInput === "Scissors") {
-         alert(`${currentMatch} = You Won!`);
+         checkRock(`${currentMatch} = You won!`);
          pWon++;
        } else {
-         alert(`${currentMatch} = Computer Won!`);
+         checkRock(`${currentMatch} = Computer won`);
          cWon++;
        }
      }
      //Player chooses Paper:
      else if (pInput === "Paper") {
        if (cInput === "Rock") {
-         alert(`${currentMatch} = You Won!`);
+         checkPaper(`${currentMatch} = You won!`);
          pWon++;
        } else {
-         alert(`${currentMatch} = Computer Won!`);
+         checkPaper(`${currentMatch} = Computer won`);
          cWon++;
        }
      }
      //Player chooses Scissors:
      else if (pInput === "Scissors") {
        if (cInput === "Paper") {
-         aler(`${currentMatch} = You Won!`);
+         checkScissors(`${currentMatch} = You won!`);
          pWon++;
        } else {
-         alert(`${currentMatch} = Computer Won!`);
+         checkScissors(`${currentMatch} = Computer won`);
          cWon++;
        }
      }
    }
+
+   function checkRock(result) {
+    let rk = document.getElementById("result");
+
+    rk.innerHTML = "<h2>" + result + "</h2>";
+  }
+
+  function checkPaper(result) {
+    let pp = document.getElementById("result");
+
+    pp.innerHTML = "<h2>" + result + "</h2>";
+  }
+
+  function checkScissors(result) {
+    let sc = document.getElementById("result");
+
+    sc.innerHTML = "<h2>" + result + "</h2>";
+  }
  
    function updateScore() {
      document.getElementById("p-won").textContent = pWon;
@@ -73,7 +91,7 @@ const options = document.querySelectorAll(".options");
      if (pWon === 5 || cWon === 5) {
        const winner =
          pWon === 5
-           ? "You won against the Computer!! Viva la Humanity!"
+           ? "You won against the Computer!!"
            : "The Computer won!! (Is this how the AI Uprising begins??)";
        showResult(winner);
        return true;
