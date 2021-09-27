@@ -1,12 +1,15 @@
-/* Generic page style */
-
 body {
     background-color: #3B3D3C;
     font-family: Bebas Neue, Roboto;
     color: #F4F2ED;
     text-align: center;
+    height: 100%;
     padding: 0;
     margin: 0;
+}
+
+#container {
+    min-height: 100%;
 }
 
 /* Heading */
@@ -30,49 +33,43 @@ body {
     border-width: 4px;
     border-style: solid;
     border-color: #F7546D;
-    width: 2rem;
-    height: 2rem;
+    height: 5rem;
     padding: 1rem;
-    animation-name: anim-fade;
-    animation-duration: 2s;
-    animation-fill-mode: forwards;
-    width: 100%;
-    max-width: 120px;
+    margin-top: 1rem;
+    width: 7rem;
+    overflow: hidden;
   }
 
 .display-moves {
     align-items: center;
-    margin: 0.5rem;
+    margin: 0.5em;
     justify-content: space-evenly;
 }
 
 .move {
-    width: 2.5rem;
-    height: 2.5rem;
-    padding: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    padding: 1px;
+    margin: 0.5rem;
     background-color: #F4F2ED;
-    border-radius: 50%;
     border-width: 2px;
     border-style: solid;
     border-color: #F7546D;
     display: inline-block;
+    overflow: hidden;
+}
+
+.label {
+    letter-spacing: 2px;
+    padding-bottom: 0.5rem;
+    margin-bottom: 5rem;
 }
 
 .separator {
-    font-size: 1rem;
+    font-size: 3rem;
     display: inline-block;
     margin: 0.5rem;
 }
-
-
-edited out {
-     color: #E48894;
-    
-     color: #F7546D;
-     color: #899690;
- 
- }
- */
 
 .score-area {
     margin: 5px auto;
@@ -99,57 +96,30 @@ edited out {
     text-decoration: none;
 }
 
-footer ul li {
-    color: #F4F2ED;
-    font-weight: bold;
-    font-size: 1.5rem;
-    list-style: none;
-    text-decoration: none;
-    display: inline-block;
-    margin: auto;
-    padding: 1.5rem 2rem;
-}
-
 /* Display moves played */
 .played-move {
     width: 15%;
     display: inline-block;
 }
 
-/* Media queries */
 
-@media (max-width: 1200px) {
-    .rock-button {
-        color: #E48894;
-        display: inline-block;
-        font-size: 2.5rem;
-        font-weight: bold;
-        width: 80%;
-    }
-   
-    .paper-button {
-        color: #F7546D;
-        display: inline-block;
-        font-size: 2.5rem;
-        font-weight: bold;
-        width: 80%;
-    }
-   
-    .scissors-button {
-        color: #899690;
-        display: inline-block;
-        font-size: 2.5rem;
-        font-weight: bold;
-        width: 80%;
-    }
+/* footer */
 
-    .score-area {
-    width: 100%;
-    }
+footer {
+    height: 120px;
+}
 
-    .scores {
-        margin: 0.5em auto;
-        display: block;
-        padding: 5px;
-    }
+.social-networks {
+    text-align: center;
+}
+
+.social-networks > li {
+    display: inline;
+}
+
+.social-networks i {
+    font-size: 150%;
+    margin: 1%;
+    padding: 5%;
+    color: #ac9a9c;
 }

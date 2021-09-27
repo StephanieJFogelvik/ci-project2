@@ -12,41 +12,48 @@
     <title>Rock Paper Scissors</title>
 </head>
 <body>
-    <h1 class="heading">Rock Paper Scissors</h1>
+    <div id="container">
+        <h1 class="heading">Rock Paper Scissors</h1>
 
-    <!-- Displays results:  -->
-    <div id="result">
+        <!-- Displays results:  -->
+        <div id="result">
         <!--Result will be here-->
-    </div>
-
-    <!-- Display Moves played -->
-    <div class="display-moves">
-        <div class="move">
-            <img id="pWon" src="./assets/images/rock.svg">
         </div>
+
+        <!-- Display Moves played -->
+        <div class="display-moves">
+            <div class="move">
+            <img id="pWon" src="./assets/images/rock.svg">
+            </div>
         <div class="separator">VS</div>
         <div class="move">
             <img id="cWon" src="./assets/images/rock.svg">
         </div>
-    </div>
-    <!-- Game Section-->
-    <div class="play">
-        <input class="options rock-button" type="image" src="./assets/images/rock.svg" value="rock" />
-        <label  for="rock-button">Rock</label>
-        <input class="options paper-button" type="image" src="./assets/images/paper.svg" value="paper" />
-        <label for="paper-button">Paper</label>
-        <input class="options scissors-button" type="image" src="./assets/images/scissors.svg" value="scissors" />
-        <label for="scissors-button">Scissors</label>
-    </div>
+        </div>
+        <!-- Game Section-->
+        <div class="play">
+            <input class="options rock-button" type="image" src="./assets/images/rock.svg" value="rock" />
+            <br>
+            <label  for="rock-button" class="label">Rock</label>
+            <br>
+            <input class="options paper-button" type="image" src="./assets/images/paper.svg" value="paper" />
+            <br>
+            <label for="paper-button" class="label">Paper</label>
+            <br>
+            <input class="options scissors-button" type="image" src="./assets/images/scissors.svg" value="scissors" />
+            <br>
+            <label for="scissors-button" class="label">Scissors</label>
+        </div>
 
-    <!-- Score Area-->
-    <div class="score-area">
-        <p class="scores">You won <span id="p-won">0</span></p>
-        <p class="scores">Computer won <span id="c-won">0</span></p>
-    </div>
+        <!-- Score Area-->
+        <div class="score-area">
+            <p class="scores">You won <span id="p-won">0</span></p>
+            <p class="scores">Computer won <span id="c-won">0</span></p>
+        </div>
 
-    <!-- Link to the start page-->
-    <a class="new-game" href="index.html" aria-label="Takes you back to the start page">New Game</a>
+        <!-- Link to the start page-->
+        <a class="new-game" href="index.html" aria-label="Takes you back to the start page">New Game</a>
+    </div>
 
     <!--footer-->
     <footer>
@@ -70,6 +77,6 @@
         </ul>
     </footer>
     
-   <script src="assets/js/script.js"></script> 
+    <script src="assets/js/script.js"></script> 
 </body>
 </html>
